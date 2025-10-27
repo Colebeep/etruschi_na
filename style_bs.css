@@ -1,0 +1,115 @@
+html {
+    background-image: url('images/bg.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    max-width: 150px; /* Changed from 50% */
+    height: auto; 
+    border: 1px dashed #ccc;
+    margin-right: 20px;
+}
+.title-section {
+    text-align: right;
+    margin-left: auto;
+}
+.title-section h1 {
+    font-size: 2.5em;
+    color: #004d99; /* A shade of blue */
+    margin: 0;
+    padding: 0;
+}
+.title-section p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* These styles are no longer needed as Bootstrap handles them */
+/* .navbar { ... } */
+/* .navbar ul { ... } */
+/* .navbar li { ... } */
+/* .navbar a { ... } */
+/* .main-content { ... } */
+/* .left-column { ... } */
+/* .right-column { ... } */
+
+.highlight-box {
+    background-color: #004d99;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.officers-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+.officers-list li {
+    margin-bottom: 5px;
+    color: #004d99;
+}
+
+/* These styles are no longer needed as .card component handles them */
+/* .biography-section { ... } */
+/* .bio-card { ... } */
+/* .bio-card img { ... } */
+/* .bio-card h3 { ... } */
+/* .bio-card p { ... } */
+/* .read-more { ... } */
+
+
+/* --- Optional --- */
+/* Add this to replicate your dashed-border image placeholder on the new Bootstrap cards */
+.card-img-top {
+    width: 100%;
+    height: 150px; 
+    background-color: #f5f5f5;
+    border-bottom: 1px dashed #aaa;
+    object-fit: contain; 
+}
+/* --- Adjustments for Card Headers --- */
+.card-header h4 {
+    /* Ensures no line breaks are allowed */
+    white-space: nowrap; 
+    
+    /* Hides text that goes outside the header area */
+    overflow: hidden; 
+    
+    /* Displays an ellipsis (...) for hidden text */
+    text-overflow: ellipsis; 
+    
+    /* Removes any bottom margin from the h4 inside the header */
+    margin-bottom: 0; 
+}
+
+/* Optional: Keep the card header height consistent */
+.card-header {
+    height: 35px; /* Adjust this value if needed */
+    display: flex; /* Helps vertically align the text */
+    align-items: center;
+    justify-content: center;
+}
