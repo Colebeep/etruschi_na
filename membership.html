@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSEI-NA - Membership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_bs.css">
+    <style>
+        /* Custom class to create two columns using CSS for better border integrity */
+        @media (min-width: 768px) { /* Applies only on desktop/tablet */
+            .member-list-2col {
+                /* Splits the list into two columns */
+                column-count: 2;
+                /* Ensures content flows correctly */
+                column-gap: 20px; 
+            }
+        }
+        /* Override for list items inside the column-count parent */
+        .member-list-2col .list-group-item {
+            /* Force list items to not break across columns */
+            break-inside: avoid-column;
+        }
+
+        /* NEW STYLE: Custom background color for Board section to differentiate */
+        .bg-secondary-blue {
+            background-color: #0066cc !important; /* Slightly different blue */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container page-content-wrapper shadow-sm my-4 p-0">
+
+        <div class="header">
+            <div class="logo-section">
+                <img class="logo" src="images/logo.jpg" alt="Logo">
+            </div>
+            <div class="title-section">
+                <h1>INSEI-NA</h1>
+                <p>ISTITUTO NAZIONALE DI STUDI ETRUSCHI ED ITALICI</p>
+                <p>Sezione Nordamericana</p>
+                <br>
+                <p>THE NATIONAL INSTITUTE OF</p>
+                <p>ETRUSCAN AND ITALIC STUDIES</p>
+                <p>North American Section</p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Excavations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Excavation 1</a>
+                                <a class="dropdown-item" href="#">Excavation 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">All Excavations</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Publications</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row mt-4">
+            
+            <div class="col-lg-6 ps-5 pe-5 mb-4">
+                <div class="card member-card">
+                    <div class="card-header bg-primary text-white text-uppercase fw-bold text-center">
+                        OFFICERS OF THE SECTION (Ufficiali della Sezione)
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold">Nancy T. de Grummond, Director (Direttore)</li>
+                        <li class="list-group-item fw-bold">Francesco de Angelis, Secretary-Treasurer (Segretario-Tesoriere)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 ps-5 pe-5 mb-4">
+                <div class="card member-card">
+                    <div class="card-header bg-secondary-blue text-white text-uppercase fw-bold text-center">
+                        BOARD OF THE SECTION (Comitato della Sezione)
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold">Francesco de Angelis, Ex officio</li>
+                        <li class="list-group-item">Hilary Becker</li>
+                        <li class="list-group-item">Fabio Colivicchi</li>
+                        <li class="list-group-item fw-bold">Nancy T. de Grummond, Ex officio</li>
+                        <li class="list-group-item">Keely Heuer</li>
+                        <li class="list-group-item">Lisa C. Pieraccini</li>
+                        <li class="list-group-item">P. Gregory Warden</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 ps-5 pe-5 mb-1">
+                <div class="highlight-box text-center">
+                    MEMBERS OF THE SECTION (MEMBRI DELLA SEZIONE)
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 ps-5 pe-5 mb-3"> 
+                <div class="card member-card w-100 w-lg-50">
+                    <div class="card-header bg-primary text-white text-uppercase fw-bold text-center">
+                        Ordinary (Membri Ordinari)
+                    </div>
+                    <ul class="list-group list-group-flush member-list-2col">
+                        <li class="list-group-item"><strong>Francesco de Angelis</strong><br><small class="text-muted">fda2101@columbia.edu</small></li>
+                        <li class="list-group-item"><strong>Nancy de Grummond</strong><br><small class="text-muted">ndegrummond@fsu.edu</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 ps-5 pe-5 mb-3"> 
+                <div class="card member-card w-100 w-lg-50">
+                    <div class="card-header bg-primary text-white text-uppercase fw-bold text-center">
+                        Corresponding Members (Membri Correspondenti)
+                    </div>
+                    <ul class="list-group list-group-flush member-list-2col">
+                        <li class="list-group-item"><strong>Richard Daniel De Puma</strong><br><small class="text-muted">richard-depuma@uiowa.edu</small></li>
+                        <li class="list-group-item"><strong>Ingrid Edlund-Berry</strong><br><small class="text-muted">iemeb@austin.utexas.edu</small></li>
+                        <li class="list-group-item"><strong>Alexandra Carpino</strong><br><small class="text-muted">Alexandra.Carpino@nau.edu</small></li>
+                        <li class="list-group-item"><strong>Fabio Colivicchi</strong><br><small class="text-muted">colivicf@queensu.ca</small></li>
+                        <li class="list-group-item"><strong>William Harris</strong><br><small class="text-muted">wvh1@columbia.edu</small></li>
+                        <li class="list-group-item"><strong>Jean MacIntosh Turfa</strong><br><small class="text-muted">jturfa@sas.upenn.edu</small></li>
+                        <li class="list-group-item"><strong>Helen Nagy</strong><br><small class="text-muted">inagy@pugetsound.edu</small></li>
+                        <li class="list-group-item"><strong>Erik Nielsen</strong><br><small class="text-muted">enielsen@fus.edu</small></li>
+                        <li class="list-group-item"><strong>Lisa C. Pieraccini</strong><br><small class="text-muted">lisap@berkeley.edu</small></li>
+                        <li class="list-group-item"><strong>Anthony Tuck</strong><br><small class="text-muted">atuck@classics.umass.edu</small></li>
+                        <li class="list-group-item"><strong>Gregory Warden</strong><br><small class="text-muted">gwarden@mail.smu.edu</small></li>
+                        <li class="list-group-item"><strong>Nancy Winter</strong><br><small class="text-muted">nancyawinter@gmail.com</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 ps-5 pe-5 mb-3"> 
+                <div class="card member-card w-100 w-lg-50">
+                    <div class="card-header bg-primary text-white text-uppercase fw-bold text-center">
+                        Associate Members (Membri Associati)
+                    </div>
+                    <ul class="list-group list-group-flush member-list-2col">
+                        <li class="list-group-item"><strong>Hilary Becker</strong><br><small class="text-muted">hbecker@binghamton.edu</small></li>
+                        <li class="list-group-item"><strong>Sinclair Bell</strong><br><small class="text-muted">sinclair.bell@gmail.com</small></li>
+                        <li class="list-group-item"><strong>Sheramy Bundrick</strong><br><small class="text-muted">bundrick@usf.edu</small></li>
+                        <li class="list-group-item"><strong>Maurizio Forte</strong><br><small class="text-muted">maurizio.forte@duke.edu</small></li>
+                        <li class="list-group-item"><strong>Keely Heuer</strong><br><small class="text-muted">heuerk@newpaltz.edu</small></li>
+                        <li class="list-group-item"><strong>Lora Holland Goldthwaite</strong><br><small class="text-muted">lholland1@unc.edu</small></li>
+                        <li class="list-group-item"><strong>John Hopkins</strong><br><small class="text-muted">jnh1@nyu.edu</small></li>
+                        <li class="list-group-item"><strong>Claire Lyons</strong><br><small class="text-muted">CLyons@getty.edu</small></li>
+                        <li class="list-group-item"><strong>Gretchen Meyers</strong><br><small class="text-muted">gretchen.meyers@fandm.edu</small></li>
+                        <li class="list-group-item"><strong>Bice Peruzzi</strong><br><small class="text-muted">bice.peruzzi@classics.rutgers.edu</small></li>
+                        <li class="list-group-item"><strong>Bridget Sandhoff</strong><br><small class="text-muted">bridget.sandhoff@gmail.com</small></li>
+                        <li class="list-group-item"><strong>Laurel Taylor</strong><br><small class="text-muted">laureltayl@gmail.com</small></li>
+                        <li class="list-group-item"><strong>Delphine Tonglet</strong><br><small class="text-muted">Delphine.Tonglet@metmuseum.org</small></li>
+                        <li class="list-group-item"><strong>Rex Wallace</strong><br><small class="text-muted">rwallace@classics.umass.edu</small></li>
+                        <li class="list-group-item"><strong>Cristiana Zaccagnino</strong><br><small class="text-muted">zaccagn@queensu.ca</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
